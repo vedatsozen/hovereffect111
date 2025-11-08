@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #84994F;
+    --secondary-color: #FFE797;
+    --third-color: #FCB53B;
+    --fourth-color: #A72703;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.fotodiv {
+    cursor: pointer;
+
+}
+
+.fotodiv:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px black;
+ 
+}
+
+
+
+
+

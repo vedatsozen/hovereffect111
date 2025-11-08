@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SİTE 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <header class="h-screen w-screen flex flex-col gap-4 justify-center items-center">
+        <div class="fotos flex grid grid-cols-3 gap-8 w-10/12">
+           
+            <div class="fotodiv flex justify-center items-center relative">
+                <img src="imgs/1.jpg" class="img">
+                <div class="tlayer absolute top-0 left-0 w-full h-full"></div>
+                <p class="w-10/12 text text-white text-center text-normal absolute top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium cum voluptas tenetur obcaecati ipsum temporibus placeat sunt sit totam quia!</p>
+            </div>
+
+            <div class="fotodiv flex justify-center items-center relative">
+                <img src="imgs/2.jpg" class="img">
+                <div class="tlayer absolute top-0 left-0 w-full h-full"></div>
+                <p class="w-10/12 text text-white text-center text-normal absolute top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium cum voluptas tenetur obcaecati ipsum temporibus placeat sunt sit totam quia!</p>
+            </div>
+
+
+             <div class="fotodiv flex justify-center items-center relative">
+                <img src="imgs/3.jpg" class="img">
+                <div class="tlayer absolute top-0 left-0 w-full h-full"></div>
+                <p class="w-10/12 text text-white text-center text-normal absolute top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium cum voluptas tenetur obcaecati ipsum temporibus placeat sunt sit totam quia!</p>
+            </div>
+            
+        </div>
+    </header>
+
+    <script>
+        $(document).ready(function() {
+
+            $(".text").hide();
+
+            $(".fotodiv").hover(function() {
+                $(this).children(".tlayer").addClass("bg-black/50");
+                $(this).children(".text").show();
+            })
+
+            $(".fotodiv").mouseleave(function() {
+                $(this).children(".tlayer").removeClass("bg-black/50");
+                $(this).children(".text").hide();
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>
